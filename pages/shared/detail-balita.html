@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Riwayat Balita — Posyandu Pintar</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/pages.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="app-sidebar">
+      <a href="../kader/dashboard.html" class="sidebar-brand">
+        <div class="brand-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <div class="brand-info">
+          <span class="brand-title">Posyandu Pintar</span>
+          <span class="brand-subtitle">Panel Petugas</span>
+        </div>
+      </a>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">Navigasi</div>
+        <ul class="sidebar-menu">
+          <li>
+            <a id="btnKembaliDetail" href="../kader/balita.html" class="sidebar-link">
+              <i class="bi bi-arrow-left"></i>
+              <span>Kembali ke Daftar</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile-widget">
+          <div class="user-avatar js-user-avatar">SR</div>
+          <div class="user-meta">
+            <span class="user-name js-user-name">Bu Sari</span>
+            <span class="user-role js-user-role">Kader Posyandu</span>
+          </div>
+          <button type="button" class="btn btn-link text-danger p-0 ms-auto js-btn-logout" title="Keluar">
+            <i class="bi bi-box-arrow-right fs-5"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="app-main">
+
+      <header class="app-topbar">
+        <div class="topbar-left">
+          <button type="button" id="btnToggleSidebar" class="btn btn-link text-ink-700 d-md-none p-0 me-2" aria-label="Buka Menu">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+          <div class="topbar-breadcrumb">
+            <a href="../kader/balita.html">Data Balita</a>
+            <i class="bi bi-chevron-right fs-xs"></i>
+            <span>Detail Tumbuh Kembang</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <span class="role-badge-pill">
+            <i class="bi bi-shield-check"></i> Profil Balita
+          </span>
+        </div>
+      </header>
+
+      <main class="app-content">
+
+        <section class="child-profile-hero">
+          <div class="child-profile-main">
+            <div class="child-identity">
+              <div id="childAvatar" class="child-avatar-large">D</div>
+              <div>
+                <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                  <h1 id="childName" class="h3 text-forest mb-0">Dinda Aulia</h1>
+                  <div id="childStatusBadge">
+
+                  </div>
+                </div>
+                <div id="childMetaText" class="text-ink-700 font-sm">
+                  Perempuan · 2 tahun 4 bulan · Dusun Melati
+                </div>
+                <div id="childParentText" class="font-sm text-ink-500 mt-1">
+                  Orang Tua: Siti Aminah
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <a id="btnTambahUkurBalita" href="../kader/pengukuran.html" class="btn-posyandu-primary btn-sm">
+                <i class="bi bi-clipboard2-plus"></i> Catat Pengukuran Baru
+              </a>
+            </div>
+          </div>
+
+          <div class="child-meta-grid">
+            <div class="child-meta-cell">
+              <span class="label">Berat Terakhir</span>
+              <span id="metricBbTerakhir" class="val">10,8 kg</span>
+            </div>
+            <div class="child-meta-cell">
+              <span class="label">Tinggi Terakhir</span>
+              <span id="metricTbTerakhir" class="val">83,1 cm</span>
+            </div>
+            <div class="child-meta-cell">
+              <span class="label">Perubahan BB</span>
+              <span id="metricDeltaBb" class="val text-green-brand">+0,2 kg</span>
+            </div>
+            <div class="child-meta-cell">
+              <span class="label">Tanggal Pengukuran</span>
+              <span id="metricTglTerakhir" class="val" style="font-size: 0.9375rem;">18 Agustus 2026</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-posyandu">
+          <div class="panel-header">
+            <div>
+              <h3 class="panel-title">Grafik Tren Pertumbuhan</h3>
+              <p class="panel-subtitle">Perkembangan berat dan tinggi badan balita dari waktu ke waktu</p>
+            </div>
+            <div class="chart-toggle-group">
+              <button type="button" id="btnToggleChartBb" class="chart-toggle-btn active">
+                Berat Badan (kg)
+              </button>
+              <button type="button" id="btnToggleChartTb" class="chart-toggle-btn">
+                Tinggi Badan (cm)
+              </button>
+            </div>
+          </div>
+
+          <div style="position: relative; min-height: 260px; height: 280px; width: 100%;">
+            <canvas id="chartPertumbuhan"></canvas>
+            <div id="chartEmptyNotice" style="display: none;"></div>
+          </div>
+        </section>
+
+        <section class="panel-posyandu">
+          <div class="panel-header">
+            <div>
+              <h3 class="panel-title">Riwayat Pengukuran Lengkap</h3>
+              <p class="panel-subtitle">Catatan penimbangan berat dan pengukuran tinggi badan bulanan</p>
+            </div>
+          </div>
+
+          <div class="table-posyandu-wrap d-desktop-table">
+            <table class="table-posyandu">
+              <thead>
+                <tr>
+                  <th>Tanggal</th>
+                  <th>Usia</th>
+                  <th>Berat Badan</th>
+                  <th>Tinggi Badan</th>
+                  <th>Status Skrining</th>
+                  <th>Dicatat Oleh</th>
+                  <th>Catatan</th>
+                  <th style="text-align: right;">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyRiwayatBalita">
+
+              </tbody>
+            </table>
+          </div>
+
+          <div id="timelineRiwayatBalita" class="timeline-pengukuran d-mobile-list">
+
+          </div>
+        </section>
+      </main>
+
+      <nav class="nav-kader-mobile">
+        <a href="../kader/dashboard.html" class="nav-kader-item">
+          <i class="bi bi-house-door"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="../kader/balita.html" class="nav-kader-item active">
+          <i class="bi bi-people-fill"></i>
+          <span>Balita</span>
+        </a>
+        <a href="../kader/pengukuran.html" class="nav-kader-item">
+          <i class="bi bi-clipboard2-plus"></i>
+          <span>Ukur</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+  <script src="../../assets/js/storage.js"></script>
+  <script src="../../assets/js/mock-data.js"></script>
+  <script src="../../assets/js/components/toast.js"></script>
+  <script src="../../assets/js/components/dialog.js"></script>
+  <script src="../../assets/js/components/status-badge.js"></script>
+  <script src="../../assets/js/components/empty-state.js"></script>
+  <script src="../../assets/js/components/loading-state.js"></script>
+  <script src="../../assets/js/services/auth-service.js"></script>
+  <script src="../../assets/js/services/balita-service.js"></script>
+  <script src="../../assets/js/services/pengukuran-service.js"></script>
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/pages/detail-balita.js"></script>
+</body>
+</html>

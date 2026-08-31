@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Petugas — Posyandu Pintar</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/pages.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="app-sidebar">
+      <a href="../kader/dashboard.html" class="sidebar-brand">
+        <div class="brand-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <div class="brand-info">
+          <span class="brand-title">Posyandu Pintar</span>
+          <span class="brand-subtitle">Panel Petugas</span>
+        </div>
+      </a>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">Menu Utama</div>
+        <ul class="sidebar-menu">
+          <li>
+            <a id="linkKembaliDashboard" href="../kader/dashboard.html" class="sidebar-link">
+              <i class="bi bi-house-door"></i>
+              <span>Kembali ke Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="profil.html" class="sidebar-link active">
+              <i class="bi bi-person"></i>
+              <span>Profil Petugas</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile-widget">
+          <div class="user-avatar js-user-avatar">SR</div>
+          <div class="user-meta">
+            <span class="user-name js-user-name">Bu Sari</span>
+            <span class="user-role js-user-role">Kader Posyandu</span>
+          </div>
+          <button type="button" class="btn btn-link text-danger p-0 ms-auto js-btn-logout" title="Keluar">
+            <i class="bi bi-box-arrow-right fs-5"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <div class="topbar-left">
+          <button type="button" id="btnToggleSidebar" class="btn btn-link text-ink-700 d-md-none p-0 me-2" aria-label="Buka Menu">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+          <div class="topbar-breadcrumb">
+            <a id="breadcrumbDashboard" href="../kader/dashboard.html">Beranda</a>
+            <i class="bi bi-chevron-right fs-xs"></i>
+            <span>Profil Petugas</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <span class="role-badge-pill">
+            <i class="bi bi-person-check"></i> Akun Terautentikasi
+          </span>
+        </div>
+      </header>
+
+      <main class="app-content">
+        <div class="max-w-700 mx-auto" style="max-width: 640px;">
+          <div class="page-header-block mb-3">
+            <div>
+              <h1 class="page-header-title">Profil Petugas Posyandu</h1>
+              <p class="page-header-subtitle">Informasi identitas dan penugasan wilayah kerja pelayanan Posyandu</p>
+            </div>
+          </div>
+
+          <div class="panel-posyandu">
+            <div class="d-flex align-items-center gap-3 mb-4 pb-3 border-bottom">
+              <div class="user-avatar js-user-avatar" style="width: 60px; height: 60px; font-size: 1.5rem;">SR</div>
+              <div>
+                <h2 class="h5 text-forest mb-1 js-user-name">Sari Rahmawati</h2>
+                <div class="font-sm text-muted-posyandu js-user-role">Kader · Dusun Sukamaju</div>
+                <div class="font-sm text-green-brand mt-1">Desa Sukatani · Kecamatan Sejahtera</div>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <label class="form-label text-ink-500">Nama Pengguna (Username)</label>
+                <div id="profilUsername" class="fw-bold text-ink-900">kader</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label text-ink-500">Nomor Kontak / WhatsApp</label>
+                <div id="profilKontak" class="fw-bold text-ink-900">0812-3456-7890</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label text-ink-500">Peran Akses</label>
+                <div id="profilPeran" class="fw-bold text-ink-900">Kader Posyandu</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label text-ink-500">Wilayah Tugas</label>
+                <div id="profilDusun" class="fw-bold text-ink-900">Dusun Sukamaju</div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+              <button type="button" class="btn-posyandu-secondary btn-sm" onclick="history.back()">
+                <i class="bi bi-arrow-left"></i> Kembali
+              </button>
+              <button type="button" class="btn-posyandu-danger-outline btn-sm js-btn-logout">
+                <i class="bi bi-box-arrow-right"></i> Keluar dari Sistem
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../assets/js/storage.js"></script>
+  <script src="../../assets/js/mock-data.js"></script>
+  <script src="../../assets/js/components/toast.js"></script>
+  <script src="../../assets/js/components/dialog.js"></script>
+  <script src="../../assets/js/services/auth-service.js"></script>
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const user = AuthService.ambilPenggunaSaatIni();
+      if (!user) {
+        window.location.href = '../../login.html';
+        return;
+      }
+
+      document.getElementById('profilUsername').textContent = user.username;
+      document.getElementById('profilKontak').textContent = user.telepon || '-';
+      document.getElementById('profilPeran').textContent = user.peran.toUpperCase();
+      document.getElementById('profilDusun').textContent = user.dusun || 'Semua Dusun';
+
+      const dashboardLink = AuthService.dapatkanRedirectUrl(user.peran);
+      document.getElementById('linkKembaliDashboard').href = dashboardLink;
+      document.getElementById('breadcrumbDashboard').href = dashboardLink;
+    });
+  </script>
+</body>
+</html>

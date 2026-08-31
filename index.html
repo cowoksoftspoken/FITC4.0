@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posyandu Pintar — Layanan Tumbuh Kembang &amp; Skrining Balita Desa</title>
+  <meta name="description" content="Sistem digital pencatatan tumbuh kembang balita dan pemantauan pertumbuhan untuk Posyandu desa.">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <header class="landing-nav">
+    <div class="container">
+      <div class="landing-nav-inner">
+        <a href="index.html" class="landing-brand">
+          <div class="brand-icon">
+            <i class="bi bi-heart-pulse-fill"></i>
+          </div>
+          <div>
+            <span class="brand-title">Posyandu Pintar</span>
+            <span class="brand-subtitle">Layanan Tumbuh Kembang Desa</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navigasi Utama">
+          <ul class="landing-menu">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#jadwal">Jadwal</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#edukasi">Edukasi</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <a href="login.html" class="btn-posyandu-nav">
+            <i class="bi bi-box-arrow-in-right"></i> Masuk
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="tentang">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <h1 class="hero-title">
+              Tumbuh mereka berubah setiap bulan. Catatannya jangan sampai tertinggal.
+            </h1>
+            <p class="hero-desc">
+              Posyandu Pintar membantu kader mencatat hasil timbang bulanan dan membantu bidan memantau perkembangan balita dengan lebih rapi.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="login.html" class="btn-posyandu-primary btn-lg">
+                <i class="bi bi-box-arrow-in-right"></i> Masuk ke Posyandu Pintar
+              </a>
+              <a href="#jadwal" class="btn-posyandu-outline btn-lg">
+                Lihat Jadwal Posyandu
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-media-wrapper">
+              <div class="hero-photo-main">
+                <img src="assets/images/hero_bidan.jpg" alt="Bidan Desa Sukatani">
+              </div>
+              <div class="hero-photo-secondary">
+                <img src="assets/images/hero_timbang.jpg" alt="Penimbangan Balita di Posyandu">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-kegiatan-band" id="jadwal">
+      <div class="container">
+        <div class="kegiatan-wrapper">
+          <div class="kegiatan-main-info">
+            <div class="kegiatan-date-badge">
+              <span class="kegiatan-date-num">12</span>
+              <span class="kegiatan-date-month">SEP</span>
+            </div>
+            <div>
+              <div class="kegiatan-tag">Kegiatan Posyandu Terdekat</div>
+              <div class="kegiatan-title">Posyandu Balita — Dusun Sukamaju</div>
+              <div class="kegiatan-meta">
+                <span><i class="bi bi-geo-alt me-1"></i>Balai RW 02, Desa Sukatani</span>
+                <span>·</span>
+                <span><i class="bi bi-clock me-1"></i>08.00 – 11.00 WIB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <div class="kegiatan-services">
+              <span class="kegiatan-service-pill">Penimbangan</span>
+              <span class="kegiatan-service-pill">Pengukuran Tinggi</span>
+              <span class="kegiatan-service-pill">Konsultasi Bidan</span>
+            </div>
+            <a href="#berita" class="btn-posyandu-secondary btn-sm">
+              Lihat Agenda &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="context-section">
+      <div class="container">
+        <div class="row align-items-center g-4 pb-4 mb-4 border-bottom">
+          <div class="col-md-4 text-md-start text-center">
+            <div class="stat-callout-number">19,8%</div>
+            <div class="stat-callout-label">Prevalensi Stunting Nasional</div>
+            <div class="stat-callout-source">SSGI 2024 · Kementerian Kesehatan RI</div>
+          </div>
+          <div class="col-md-8">
+            <p class="fs-5 text-ink-900 mb-0 font-medium" style="line-height: 1.6;">
+              Riwayat pertumbuhan yang tersimpan dengan rapi membantu kader dan bidan melihat perubahan berat dan tinggi dari bulan ke bulan.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-center pt-2">
+          <div class="col-lg-5 problem-editorial-left">
+            <h2 class="text-forest">
+              Satu catatan hilang, satu riwayat pertumbuhan ikut hilang.
+            </h2>
+            <p class="text-ink-500 mt-3 mb-0">
+              Pencatatan manual di buku fisik menyulitkan kader dan bidan dalam menjaga kesinambungan pemantauan gizi anak desa.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="problem-editorial-list">
+              <div class="problem-editorial-item">
+                <h4>Catatan tersebar</h4>
+                <p>Data pertumbuhan sulit dicari kembali ketika hanya tersimpan dalam buku catatan fisik yang rentan rusak atau tertinggal.</p>
+              </div>
+
+              <div class="problem-editorial-item">
+                <h4>Tren sulit terlihat</h4>
+                <p>Perubahan berat dan tinggi antar bulan sulit dibandingkan dengan cepat tanpa grafik riwayat yang terstruktur.</p>
+              </div>
+
+              <div class="problem-editorial-item">
+                <h4>Perhatian bisa terlambat</h4>
+                <p>Bidan harus memeriksa banyak catatan satu per satu sebelum menemukan balita yang membutuhkan tinjauan gizi lanjutan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layanan-section" id="layanan">
+      <div class="container">
+        <div class="section-header">
+          <h2>Layanan Posyandu</h2>
+          <p>Pelayanan dan pencatatan yang membantu pemantauan tumbuh kembang balita.</p>
+        </div>
+
+        <div class="layanan-split-layout">
+          <div class="layanan-featured-panel">
+            <div>
+              <span class="layanan-badge-label">Layanan Utama</span>
+              <h3>Penimbangan &amp; Pengukuran Balita</h3>
+              <p>
+                Berat dan tinggi badan dicatat pada setiap kunjungan Posyandu untuk memantau status gizi anak secara teratur dan menjaga kesinambungan riwayat KMS digital.
+              </p>
+            </div>
+            <div>
+              <a href="login.html" class="btn-posyandu-primary">
+                Lihat Alur Pencatatan <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="layanan-editorial-list">
+            <div class="layanan-editorial-item">
+              <h4>Pencatatan KMS Digital</h4>
+              <p>Riwayat pengukuran tersimpan lebih rapi dari satu kunjungan ke kunjungan berikutnya tanpa risiko buku catatan hilang.</p>
+            </div>
+
+            <div class="layanan-editorial-item">
+              <h4>Pemantauan Pertumbuhan</h4>
+              <p>Perubahan berat dan tinggi dapat dilihat dari waktu ke waktu sehingga perlambatan pertumbuhan terdeteksi lebih awal.</p>
+            </div>
+
+            <div class="layanan-editorial-item">
+              <h4>Konsultasi &amp; Tinjauan Bidan</h4>
+              <p>Balita yang membutuhkan perhatian dapat ditinjau lebih lanjut oleh Bidan Desa untuk konseling gizi atau evaluasi lanjutan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="cara-kerja">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dari Penimbangan Sampai Tinjauan Bidan</h2>
+          <p>Tiga tahapan sederhana yang menyambungkan kegiatan penimbangan kader dengan evaluasi bidan desa.</p>
+        </div>
+
+        <div class="alur-flow-container">
+          <div class="alur-step-item">
+            <div class="alur-step-header">
+              <div class="alur-step-num">01</div>
+              <div class="alur-step-line"></div>
+            </div>
+            <h3>Catat Pengukuran</h3>
+            <p>Berat dan tinggi badan dicatat saat kegiatan Posyandu melalui formulir praktis tanpa perlu menghitung usia secara manual.</p>
+          </div>
+
+          <div class="alur-step-item">
+            <div class="alur-step-header">
+              <div class="alur-step-num">02</div>
+              <div class="alur-step-line"></div>
+            </div>
+            <h3>Riwayat Diperbarui</h3>
+            <p>Pengukuran bulan ini langsung tersimpan bersama riwayat kunjungan sebelumnya untuk membentuk tren pertumbuhan balita.</p>
+          </div>
+
+          <div class="alur-step-item">
+            <div class="alur-step-header">
+              <div class="alur-step-num">03</div>
+              <div class="alur-step-line"></div>
+            </div>
+            <h3>Bidan Melihat yang Perlu Ditinjau</h3>
+            <p>Balita dengan tren pertumbuhan yang melambat muncul di daftar tinjauan agar intervensi gizi dapat segera disiapkan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Untuk Kader dan Bidan</h2>
+          <p>Tampilan disesuaikan dengan alur kerja masing-masing petugas kesehatan desa.</p>
+        </div>
+
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div>
+              <span class="experience-badge experience-badge-kader">Untuk Kader</span>
+              <h3 class="h5 text-forest mb-1">Catat Pengukuran Lapangan</h3>
+              <p class="font-sm text-ink-500 mb-2">Catat pengukuran dan lihat balita yang belum ditimbang tanpa membuka banyak halaman.</p>
+            </div>
+
+            <div class="mini-mock-screen">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="fw-bold font-sm text-forest">Selamat pagi, Bu Sari</span>
+                <span class="badge bg-warning-soft text-warning-text border-warning-border font-xs">7 Belum Ditimbang</span>
+              </div>
+              <div class="btn-posyandu-primary btn-sm w-100 mb-3 justify-content-start font-xs py-1">
+                <i class="bi bi-clipboard2-plus"></i> Mulai Pengukuran
+              </div>
+              <div class="mini-mock-row">
+                <span>Dinda Aulia · 2 th 4 bln</span>
+                <span class="text-green-brand font-semibold">Catat &rarr;</span>
+              </div>
+              <div class="mini-mock-row">
+                <span>Raka Pratama · 1 th 11 bln</span>
+                <span class="text-green-brand font-semibold">Catat &rarr;</span>
+              </div>
+            </div>
+
+            <p class="font-sm text-ink-700 mb-0">
+              <i class="bi bi-check2-circle text-green-brand me-1"></i> Input angka instan dengan papan ketik desimal dan tombol yang ramah sentuhan.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div>
+              <span class="experience-badge experience-badge-bidan">Untuk Bidan</span>
+              <h3 class="h5 text-forest mb-1">Evaluasi &amp; Prioritas Tinjauan</h3>
+              <p class="font-sm text-ink-500 mb-2">Lihat balita yang perlu ditinjau dan buka riwayat pertumbuhannya dengan cepat.</p>
+            </div>
+
+            <div class="mini-mock-screen">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="fw-bold font-sm text-forest">Balita Perlu Ditinjau</span>
+                <span class="badge bg-danger-soft text-danger border-danger-border font-xs">Prioritas Review</span>
+              </div>
+              <div class="mini-mock-row mb-2">
+                <div>
+                  <div class="fw-bold text-forest">Dinda Aulia</div>
+                  <div class="font-xs text-ink-500">Dusun Melati · BB Stagnan</div>
+                </div>
+                <span class="status-badge status-badge-pemantauan py-1 px-2 font-xs">Tinjau</span>
+              </div>
+              <div class="mini-mock-row">
+                <div>
+                  <div class="fw-bold text-forest">Farel Aditya</div>
+                  <div class="font-xs text-ink-500">Dusun Melati · BB Turun</div>
+                </div>
+                <span class="status-badge status-badge-prioritas py-1 px-2 font-xs">Prioritas</span>
+              </div>
+            </div>
+
+            <p class="font-sm text-ink-700 mb-0">
+              <i class="bi bi-check2-circle text-green-brand me-1"></i> Langsung melihat tren pertumbuhan lengkap, grafik riwayat, dan ringkasan kondisi tiap dusun.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="berita-section" id="berita">
+      <div class="container">
+        <div class="section-header">
+          <h2>Berita &amp; Kegiatan Posyandu</h2>
+          <p>Informasi agenda kegiatan kesehatan masyarakat, distribusi gizi, dan kegiatan posyandu desa.</p>
+        </div>
+
+        <div class="berita-editorial-grid">
+          <a href="pages/shared/detail-berita.html?id=news_01" class="berita-featured-card" aria-label="Baca berita jadwal penimbangan serentak">
+            <div class="berita-featured-img">
+              <img src="assets/images/berita_vitamin_a.jpg" alt="Jadwal Penimbangan Posyandu">
+            </div>
+            <div class="berita-featured-body">
+              <div class="berita-category-tag">KABAR DESA</div>
+              <h4>Jadwal Penimbangan Serentak &amp; Pembagian Vitamin A</h4>
+              <p>Pemerintah Desa Sukatani bersama Bidan Desa dan Kader mengumumkan jadwal posyandu serentak di 4 dusun pada pekan kedua September.</p>
+              <div class="berita-meta">
+                <i class="bi bi-calendar3"></i>
+                <span>28 Agustus 2026</span>
+                <span class="ms-auto text-green-brand fw-semibold">Baca Selengkapnya &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="berita-secondary-list">
+            <a href="pages/shared/detail-berita.html?id=news_02" class="berita-secondary-card" aria-label="Baca berita program PMT pangan lokal">
+              <div class="berita-sec-thumbnail">
+                <img src="assets/images/berita_pmt_gizi.jpg" alt="Program PMT Pangan Lokal">
+              </div>
+              <div class="flex-grow-1">
+                <div class="berita-category-tag">GIZI &amp; KESEHATAN</div>
+                <h5 class="text-forest h6 mb-1">Program PMT Pangan Lokal: Manfaat Telur &amp; Ikan</h5>
+                <p class="font-xs text-ink-500 mb-1">Pemberian Makanan Tambahan berbasis pangan lokal untuk pertumbuhan balita.</p>
+                <div class="font-xs text-ink-400">25 Agustus 2026</div>
+              </div>
+            </a>
+
+            <a href="pages/shared/detail-berita.html?id=news_03" class="berita-secondary-card" aria-label="Baca berita kunjungan bidan desa">
+              <div class="berita-sec-thumbnail">
+                <img src="assets/images/berita_kunjungan_bidan.jpg" alt="Kunjungan Bidan Desa">
+              </div>
+              <div class="flex-grow-1">
+                <div class="berita-category-tag">KEGIATAN POSYANDU</div>
+                <h5 class="text-forest h6 mb-1">Kunjungan Bidan Desa di Dusun Melati</h5>
+                <p class="font-xs text-ink-500 mb-1">Tinjauan langsung dan konseling gizi keluarga untuk balita dalam pemantauan.</p>
+                <div class="font-xs text-ink-400">20 Agustus 2026</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="edukasi-section" id="edukasi">
+      <div class="container">
+        <div class="section-header">
+          <h2>Info &amp; Panduan Tumbuh Kembang</h2>
+          <p>Panduan dan informasi penting seputar pemantauan tumbuh kembang dan gizi balita di Posyandu.</p>
+        </div>
+
+        <div class="edukasi-grid">
+          <a href="pages/shared/detail-berita.html?id=art_01" class="edukasi-featured-card" aria-label="Buka panduan kenapa pengukuran balita perlu dilakukan setiap bulan">
+            <div style="height: 220px; overflow: hidden; background-color: var(--surface-soft);">
+              <img src="assets/images/hero_timbang.jpg" alt="Penimbangan Bulanan Balita" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="edukasi-featured-body">
+              <div class="berita-category-tag">PANDUAN POSYANDU</div>
+              <h3 class="h4 text-forest mb-3">
+                Kenapa pengukuran balita perlu dilakukan setiap bulan?
+              </h3>
+              <p class="text-ink-700 mb-4">
+                Penimbangan rutin setiap bulan adalah kunci utama mendeteksi perlambatan pertumbuhan sebelum anak mengalami risiko gizi kurang atau stunting.
+              </p>
+              <div class="berita-meta mt-auto">
+                <i class="bi bi-clock"></i>
+                <span>5 menit baca</span>
+                <span>·</span>
+                <span>24 Agustus 2026</span>
+                <span class="text-green-brand fw-semibold ms-auto">Buka Panduan &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="edukasi-secondary-list">
+            <a href="pages/shared/detail-berita.html?id=art_02" class="edukasi-secondary-card" aria-label="Buka artikel protein hewani dan perannya dalam masa pertumbuhan">
+              <div class="edukasi-sec-img">
+                <img src="assets/images/berita_pmt_gizi.jpg" alt="Protein Hewani Balita">
+              </div>
+              <div>
+                <div class="berita-category-tag">GIZI BALITA</div>
+                <h4 class="text-forest h6 mb-1">Protein hewani dan perannya dalam masa pertumbuhan</h4>
+                <p class="font-xs text-ink-500 mb-1">Sumber protein hewani mengandung asam amino esensial lengkap untuk tinggi badan optimal.</p>
+                <div class="font-xs text-ink-400">19 Agustus 2026 · 4 menit baca</div>
+              </div>
+            </a>
+
+            <a href="pages/shared/detail-berita.html?id=art_03" class="edukasi-secondary-card" aria-label="Buka artikel apa yang perlu disiapkan saat kunjungan Posyandu">
+              <div class="edukasi-sec-img">
+                <img src="assets/images/berita_vitamin_a.jpg" alt="Persiapan Kunjungan Posyandu">
+              </div>
+              <div>
+                <div class="berita-category-tag">TIPS KADER</div>
+                <h4 class="text-forest h6 mb-1">Apa yang perlu disiapkan saat kunjungan Posyandu?</h4>
+                <p class="font-xs text-ink-500 mb-1">Daftar persiapan sederhana bagi orang tua sebelum menuju meja penimbangan posyandu.</p>
+                <div class="font-xs text-ink-400">12 Agustus 2026 · 3 menit baca</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="akses-sistem-section">
+      <div class="container">
+        <div class="akses-grid">
+          <div class="akses-text-content">
+            <span class="akses-badge">PORTAL RESMI POSYANDU</span>
+            <h2>Akses Sistem Posyandu Pintar</h2>
+            <p>
+              Pencatatan lebih rapi. Pemantauan lebih cepat. Masuk ke sistem untuk mengelola data balita, penimbangan bulanan, dan evaluasi tumbuh kembang anak Desa Sukatani.
+            </p>
+            <div class="d-flex align-items-center gap-3 flex-wrap">
+              <a href="login.html" class="btn-posyandu-primary btn-lg" style="background-color: #fff; color: var(--forest-900); border-color: #fff;">
+                <i class="bi bi-box-arrow-in-right"></i> Masuk ke Sistem
+              </a>
+              <a href="#jadwal" class="btn-posyandu-outline btn-lg" style="color: #fff; border-color: rgba(255,255,255,0.4);">
+                Lihat Jadwal
+              </a>
+            </div>
+          </div>
+
+          <div class="akses-image-wrapper">
+            <div class="akses-image-card">
+              <img src="assets/images/berita_kunjungan_bidan.jpg" alt="Petugas Posyandu Desa Sukatani">
+              <div class="akses-image-overlay">
+                <div class="akses-overlay-badge">Kader &amp; Bidan Desa</div>
+                <div class="akses-overlay-title">Pelayanan Terpadu Balita Desa Sukatani</div>
+                <div class="akses-overlay-sub">Dusun Sukamaju · Melati · Harapan · Karangrejo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="portal-footer">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <strong>Posyandu Pintar</strong> — Layanan Tumbuh Kembang &amp; Skrining Balita Desa Sukatani.
+        </div>
+        <div class="d-flex gap-3 font-sm">
+          <a href="#tentang" class="text-ink-500">Tentang</a>
+          <a href="#layanan" class="text-ink-500">Layanan</a>
+          <a href="#jadwal" class="text-ink-500">Jadwal</a>
+          <a href="#berita" class="text-ink-500">Berita</a>
+          <a href="#edukasi" class="text-ink-500">Edukasi</a>
+        </div>
+        <div class="text-muted-posyandu">
+          &copy; 2026 Posyandu Pintar
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/mock-data.js"></script>
+</body>
+</html>

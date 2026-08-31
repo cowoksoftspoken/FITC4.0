@@ -1,0 +1,280 @@
+@media (max-width: 767.98px) {
+  .landing-nav {
+    padding: 0.85rem 0;
+  }
+
+  .landing-menu {
+    display: none;
+  }
+
+  .hero-section {
+    padding: var(--space-40) 0 var(--space-32) 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.22;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-media-wrapper {
+    flex-direction: column;
+    margin-top: var(--space-24);
+  }
+
+  .hero-photo-main {
+    width: 100%;
+    height: 260px;
+    border-radius: 48px 16px 48px 16px;
+  }
+
+  .hero-photo-secondary {
+    display: none;
+  }
+
+  .info-kegiatan-band {
+    padding: var(--space-16) 0;
+  }
+
+  .kegiatan-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-16);
+  }
+
+  .kegiatan-main-info {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .context-section,
+  .layanan-section,
+  .how-section,
+  .experience-section,
+  .berita-section,
+  .edukasi-section,
+  .akses-sistem-section {
+    padding: var(--space-40) 0;
+  }
+
+  .stat-callout-number {
+    font-size: 2.75rem;
+  }
+
+  .problem-editorial-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .layanan-split-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-24);
+  }
+
+  .layanan-featured-panel {
+    padding: var(--space-20);
+  }
+
+  .alur-flow-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-24);
+  }
+
+  .alur-step-line {
+    display: none;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-20);
+  }
+
+  .berita-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-20);
+  }
+
+  .berita-featured-img {
+    height: 180px;
+  }
+
+  .berita-secondary-card {
+    flex-direction: row;
+    gap: var(--space-12);
+    padding: var(--space-12);
+  }
+
+  .berita-sec-thumbnail {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+
+  .edukasi-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-20);
+  }
+
+  .edukasi-secondary-card {
+    padding: var(--space-12);
+    gap: var(--space-12);
+  }
+
+  .edukasi-sec-img {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+
+  .akses-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-32);
+  }
+
+  .akses-image-card {
+    height: 240px;
+    border-radius: 24px 12px 24px 12px;
+  }
+
+  .app-sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-panel);
+  }
+
+  .app-sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .app-main {
+    margin-left: 0;
+  }
+
+  .app-content {
+    padding: var(--space-16);
+    padding-bottom: 80px;
+  }
+
+  .app-topbar {
+    padding: 0 var(--space-16);
+    height: 56px;
+  }
+
+  .nav-kader-mobile {
+    display: flex;
+  }
+
+  .d-desktop-table {
+    display: none !important;
+  }
+
+  .d-mobile-list {
+    display: flex !important;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .metrics-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+  }
+
+  .metric-item {
+    padding: var(--space-12);
+  }
+
+  .metric-value {
+    font-size: 1.375rem;
+  }
+
+  .item-balita {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-12);
+  }
+
+  .item-balita-actions {
+    justify-content: flex-end;
+    width: 100%;
+    border-top: 1px solid var(--surface-soft);
+    padding-top: var(--space-8);
+  }
+
+  .child-profile-main {
+    flex-direction: column;
+  }
+
+  .child-meta-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section {
+    padding: var(--space-48) 0 var(--space-36) 0;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-photo-main {
+    height: 320px;
+  }
+
+  .hero-photo-secondary {
+    height: 270px;
+  }
+
+  .layanan-split-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .berita-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edukasi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .akses-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-32);
+  }
+
+  .akses-image-card {
+    height: 280px;
+  }
+
+  .app-sidebar {
+    width: 220px;
+  }
+
+  .app-main {
+    margin-left: 220px;
+  }
+
+  .d-mobile-list {
+    display: none !important;
+  }
+
+  .d-desktop-table {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-kader-mobile {
+    display: none !important;
+  }
+
+  .d-mobile-list {
+    display: none !important;
+  }
+
+  .d-desktop-table {
+    display: block !important;
+  }
+}
